@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chating</title>
+    <link rel="stylesheet" href="/static/main.css">
+    <script src="/static/main.js"></script>
+</head>
+<body>
+    {% include 'nav.html' %}
+    <div class="grid-container">
+        
+        <div class="textbox" id="chat-container">
+            <div id="loading" class="message sever" style="display: none">...</div>
+        </div>
+        <div class="form-container">
+            <form id="message-form">
+                <textarea id="message" name="message" rows="1"></textarea>
+                <button type="submit">Send</button>
+                
+            </form>
+        
+        </div>
+
+
+    </div>
+
+</body>
+</html>

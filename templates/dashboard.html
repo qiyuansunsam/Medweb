@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GP Dashboard</title>
+    <link rel="stylesheet" href="/static/main.css">
+    <script src="/static/main.js"></script>
+</head>
+<body>
+    {% include 'nav.html' %}
+        {% for data in users %}
+    <br>
+    <br>
+        <div class="person-booking">
+            <div class="details">
+                {% for d in data %}
+                {{d}}
+                <br>
+                {% endfor %}
+            </div>
+            <div class="times">
+                <div class="time-column">
+                    <a href="/vid2" class="time-slot">Call</a>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</body>
+</html>

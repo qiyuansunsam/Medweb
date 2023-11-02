@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/static/main.css">
+</head>
+<body>
+    {% include 'nav.html' %}
+    <div class="grid-container">
+        <form id="login-form" class="login-form">
+            <h1>Login</h1>
+            <p>EMAIL</p>
+            <input type="text" id="username" placeholder="hello@reallygreatsite.com" required>
+            <p>PASSWORD</p>
+            <input type="text" id="password" placeholder="******" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <script src="/static/main.js"></script>
+</body>
+</html>
